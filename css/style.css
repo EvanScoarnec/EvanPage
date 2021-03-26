@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     background-repeat: no-repeat;
     background-image: url("../img/headerphoto.jpg");
-    background-size: 100%;
+    background-size: cover;
     font-family: 'Alice', serif;
     justify-content: center;
 }
