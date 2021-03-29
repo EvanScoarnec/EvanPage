@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     background-repeat: no-repeat;
     background-image: url("../img/headerphoto.jpg");
-    background-size: cover;
+    background-size: 160%;
     font-family: 'Alice', serif;
     justify-content: center;
 }
@@ -572,9 +572,11 @@ time {
 }
 
 .timeline ul {
-    margin: 0;
+    margin-bottom: 0;
     padding-bottom: 50px;
     padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 main .container {
@@ -673,8 +675,14 @@ footer .front,
     min-height: 280px;
     height: auto;
     border-radius: 10px;
-    color: #fff;
+    color: #fff !important;
     font-size: 1.5rem;
+    text-decoration: none;
+}
+
+footer a {
+    color: #fff !important;
+    text-decoration: none !important;
 }
 
 footer .back {
@@ -849,7 +857,7 @@ footer .information p {
         width: calc(100vw - 91px);
     }
     .timeline ul li:nth-child(even) div {
-        left: 45px;
+        left: 45px !important;
     }
     .timeline ul li:nth-child(even) div::before {
         left: -15px;
@@ -858,7 +866,65 @@ footer .information p {
     }
 }
 
+@media screen and (max-width: 400px) {
+    main .description {
+        width: 350px !important;
+    }
+    main .container1 img {
+        width: 110px !important;
+        height: 150px !important;
+        margin: 20px;
+    }
+    main .container1 p {
+        font-size: 17px;
+    }
+    main .container1 h1 {
+        text-align: center !important;
+    }
+    .inner .container {
+        grid-template-columns: none;
+    }
+    .timeline ul li div {
+        width: 250px !important;
+    }
+    header h3 {
+        font-size: 1.2em !important;
+    }
+    header h1 {
+        font-size: 1.7em !important;
+        padding-top: 30% !important;
+    }
+    header h2 {
+        font-size: 1.3em !important;
+    }
+    header .container-fluid p {
+        font-size: 1.3em !important;
+    }
+    header .btn1 {
+        width: 170px !important;
+        height: 65px !important;
+    }
+    header .scroll-down {
+        margin-top: 150px !important;
+    }
+    header {
+        padding-bottom: 250px;
+    }
+    .social a {
+        font-size: 35px !important;
+    }
+    .information h3 {
+        font-size: 1.2rem;
+    }
+    .information p {
+        font-size: 0.8rem !important;
+    }
+}
+
 @media only screen and (max-width: 991px) {
+    body {
+        background-size: 250%;
+    }
     .navbar {
         min-height: 76px;
         text-align: center;
@@ -894,5 +960,72 @@ footer .information p {
     }
     header h1 {
         padding-top: 15%;
+    }
+    main .svgbot,
+    .svgtop {
+        display: none;
+    }
+    main .description {
+        width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main .container1 img {
+        width: 240px;
+        height: 310px;
+    }
+    main .container1 h1 {
+        text-align: center !important;
+    }
+    .timeline ul li div {
+        width: 300px;
+    }
+    .timeline ul li:nth-child(even) div {
+        left: -339px;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    body {
+        background-size: cover;
+    }
+    header h3 {
+        font-size: 1.5em;
+    }
+    header h1 {
+        font-size: 2em !important;
+        padding-top: 22%;
+    }
+    header h2 {
+        font-size: 1.6em;
+    }
+    header .container-fluid p {
+        font-size: 1.6em;
+    }
+    header .btn1 {
+        width: 200px;
+        height: 75px;
+    }
+    header .scroll-down {
+        margin-top: 150px;
+    }
+    header {
+        padding-bottom: 250px;
+    }
+    main .svgbot,
+    .svgtop {
+        display: none;
+    }
+    main .description {
+        width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main .container1 img {
+        width: 220px;
+        height: 290px;
+    }
+    main .container1 h1 {
+        text-align: center !important;
     }
 }
