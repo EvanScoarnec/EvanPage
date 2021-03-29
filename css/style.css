@@ -870,6 +870,9 @@ footer .information p {
     main .description {
         width: 350px !important;
     }
+    body {
+        background-size: 350% !important;
+    }
     main .container1 img {
         width: 110px !important;
         height: 150px !important;
@@ -985,9 +988,18 @@ footer .information p {
     }
 }
 
+@media only screen and (max-width: 1025px) {
+    .description {
+        width: 900px;
+    }
+    .svgbot {
+        bottom: 985px;
+    }
+}
+
 @media only screen and (max-width: 630px) {
     body {
-        background-size: cover;
+        background-size: 300%;
     }
     header h3 {
         font-size: 1.5em;
