@@ -892,7 +892,7 @@ footer .information p {
     }
     header h1 {
         font-size: 1.7em !important;
-        padding-top: 30% !important;
+        padding-top: 37% !important;
     }
     header h2 {
         font-size: 1.3em !important;
@@ -905,7 +905,7 @@ footer .information p {
         height: 65px !important;
     }
     header .scroll-down {
-        margin-top: 150px !important;
+        margin-top: 100px !important;
     }
     header {
         padding-bottom: 250px;
@@ -993,7 +993,7 @@ footer .information p {
         font-size: 1.5em;
     }
     header h1 {
-        font-size: 2em !important;
+        font-size: 2em;
         padding-top: 22%;
     }
     header h2 {
@@ -1005,6 +1005,7 @@ footer .information p {
     header .btn1 {
         width: 200px;
         height: 75px;
+        font-size: 1rem !important;
     }
     header .scroll-down {
         margin-top: 150px;
