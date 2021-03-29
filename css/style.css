@@ -866,7 +866,7 @@ footer .information p {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 415px) {
     main .description {
         width: 350px !important;
     }
